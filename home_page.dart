@@ -45,12 +45,12 @@ class _HomePageState extends State<HomePage> {
                                 Padding(
                                   padding: EdgeInsets.all(8.0),
                                   child: Text(
-                                    "Search App...",
+                                    "Search Apps...",
                                     style: TextStyle(fontSize: 15),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.only(left: 45),
+                                  padding: EdgeInsets.only(left: 40),
                                   child: Icon(
                                     Icons.mic_none_outlined,
                                     size: 28,
@@ -72,7 +72,6 @@ class _HomePageState extends State<HomePage> {
                               height: 40,
                               width: 40,
                               decoration: BoxDecoration(
-                                color: Colors.blue,
                                 borderRadius: BorderRadius.circular(30),
                                 image: const DecorationImage(
                                   image: NetworkImage(
@@ -95,9 +94,7 @@ class _HomePageState extends State<HomePage> {
                               padding: EdgeInsets.only(left: 15),
                               child: Text(
                                 "For You",
-                                style: TextStyle(
-                                    color: Colors.blue,
-                                    fontWeight: FontWeight.bold),
+                                style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue),
                               ),
                             ),
                             Padding(
@@ -140,7 +137,6 @@ class _HomePageState extends State<HomePage> {
                         image: AssetImage(
                             "assets/Screenshot_20230515_184730_Google Play Store.jpg"),
                         fit: BoxFit.cover),
-                    color: Colors.blueAccent,
                     borderRadius: BorderRadius.circular(30),
                   ),
                 ),
@@ -214,7 +210,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            left: 20, top: 15),
+                                            left: 20),
                                         child: Row(
                                           children: [
                                             Container(
@@ -233,24 +229,24 @@ class _HomePageState extends State<HomePage> {
                                               children: const [
                                                 Padding(
                                                   padding: EdgeInsets.only(
-                                                      right: 180),
+                                                      right: 140,top: 10),
                                                   child: Text(
                                                     "Viking Rise",
                                                     style: TextStyle(
                                                         fontSize: 17,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                            FontWeight.w500),
                                                   ),
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 10, top: 5),
                                                   child: Text(
-                                                      "Race againts other player to explore valhalla\nand conquer Midgard!"),
+                                                      "Race againts other player to explore \nand conquer Midgard!"),
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
-                                                      right: 180, top: 5),
+                                                      right: 150, top: 5),
                                                   child: Text("4.4 * 592 MB"),
                                                 )
                                               ],
@@ -260,7 +256,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            left: 385, top: 15),
+                                            left: 400, top: 15),
                                         child: Row(
                                           children: [
                                             Container(
@@ -285,7 +281,7 @@ class _HomePageState extends State<HomePage> {
                                                     style: TextStyle(
                                                         fontSize: 17,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                            FontWeight.w500),
                                                   ),
                                                 ),
                                                 Padding(
@@ -348,25 +344,25 @@ class _HomePageState extends State<HomePage> {
                                             Column(
                                               children: const [
                                                 Padding(
-                                                  padding:
-                                                      EdgeInsets.only(right: 120),
+                                                  padding: EdgeInsets.only(
+                                                      right: 80,top: 10),
                                                   child: Text(
                                                     "Candy Crush Saga",
                                                     style: TextStyle(
                                                         fontSize: 17,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                            FontWeight.w500),
                                                   ),
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 10, top: 5),
                                                   child: Text(
-                                                      "Match 3 candies to blast sugar - Master the\nsweetest puzzel game to level up!"),
+                                                      "Match 3 candies to blast sugar the\nsweetest puzzel game to level up!"),
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
-                                                      right: 185, top: 5),
+                                                      right: 150, top: 5),
                                                   child: Text("4.4 * 90 MB"),
                                                 )
                                               ],
@@ -376,7 +372,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(
-                                            left: 385, top: 15),
+                                            left: 400, top: 15),
                                         child: Row(
                                           children: [
                                             Container(
@@ -387,7 +383,7 @@ class _HomePageState extends State<HomePage> {
                                                     image: NetworkImage(
                                                         "https://play-lh.googleusercontent.com/lTV8ClfOPTcWnZA5xwTJq4v9PAzc-wwr08IbB9CGFw9ozmfUvX0MRnK5LFRz4ad-Ig")),
                                                 borderRadius:
-                                                BorderRadius.circular(15),
+                                                    BorderRadius.circular(15),
                                                 // color: Colors.indigo,
                                               ),
                                             ),
@@ -401,7 +397,7 @@ class _HomePageState extends State<HomePage> {
                                                     style: TextStyle(
                                                         fontSize: 17,
                                                         fontWeight:
-                                                        FontWeight.bold),
+                                                            FontWeight.bold),
                                                   ),
                                                 ),
                                                 Padding(
@@ -465,21 +461,21 @@ class _HomePageState extends State<HomePage> {
                                             Column(
                                               children: const [
                                                 Padding(
-                                                  padding:
-                                                      EdgeInsets.only(right: 145),
+                                                  padding: EdgeInsets.only(
+                                                      right: 145,top: 10),
                                                   child: Text(
                                                     "Cricket League",
                                                     style: TextStyle(
                                                         fontSize: 17,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                            FontWeight.w500),
                                                   ),
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
                                                       left: 10, top: 5),
                                                   child: Text(
-                                                      "Blazing fast 1v1 cricket game with 2 over of\nbowling, batting & tons tactics"),
+                                                      "Blazing fast 1v1 cricket game with 2 of\nbowling, batting & tons tactics"),
                                                 ),
                                                 Padding(
                                                   padding: EdgeInsets.only(
@@ -490,34 +486,35 @@ class _HomePageState extends State<HomePage> {
                                             )
                                           ],
                                         ),
-                                      ), Padding(
+                                      ),
+                                      Padding(
                                         padding: const EdgeInsets.only(
-                                            left: 385, top: 15),
+                                            left: 400, top: 15),
                                         child: Row(
                                           children: [
                                             Container(
                                               height: 60,
                                               width: 60,
                                               decoration: BoxDecoration(
-                                                image:  const DecorationImage(
+                                                image: const DecorationImage(
                                                     image: NetworkImage(
                                                         "https://play-lh.googleusercontent.com/67AtnAZEKOR_bm1MAYaapEyMFsKyLQzPMoyg6dmk-x8GzfmhEhcvDWSsHJLP_bkMAPE=w240-h480-rw")),
                                                 borderRadius:
-                                                BorderRadius.circular(15),
+                                                    BorderRadius.circular(15),
                                                 // color: Colors.indigo,
                                               ),
                                             ),
                                             Column(
                                               children: const [
                                                 Padding(
-                                                  padding: EdgeInsets.only(
-                                                      left: 10),
+                                                  padding:
+                                                      EdgeInsets.only(left: 10),
                                                   child: Text(
                                                     "War Robots Multiplayer Battles",
                                                     style: TextStyle(
                                                         fontSize: 17,
                                                         fontWeight:
-                                                        FontWeight.bold),
+                                                            FontWeight.w500),
                                                   ),
                                                 ),
                                                 Padding(
