@@ -1,0 +1,531 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Screen extends StatefulWidget {
+  const Screen({Key? key}) : super(key: key);
+
+  @override
+  State<Screen> createState() => _ScreenState();
+}
+
+class _ScreenState extends State<Screen> {
+
+
+  List  <blist> l1=<blist>[
+    blist(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/283968_530132803709520_769667422_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9267fe&_nc_ohc=zHFb62CRIzEAX_H5ccv&_nc_ht=scontent.fstv2-1.fna&oh=00_AfA9hWIUCnEhtrxMxerVPbRxzIUsL0EEdus0pRikK78K4w&oe=6489D5DE'
+    ),
+    blist(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/262487_529410623781738_306057063_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=3jt6sP5TNm0AX8mpmAz&_nc_ht=scontent.fstv2-1.fna&oh=00_AfDyTNSGeoUIVXteA6vkR0vr53mBlVVc2dbTiSTEyUvhoQ&oe=6489DB02'
+    ),
+    blist(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/197623_529130783809722_1498909356_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9267fe&_nc_ohc=EnZgxDAlfzYAX-6N6z3&_nc_ht=scontent.fstv2-1.fna&oh=00_AfAz_ntEmkn4x_KkhIIJG-E7xsaH36rnfYRsRwM2BfWKjg&oe=6489E110'
+    ),
+    blist(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/295500_509711145751686_292952602_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=XrVJD0qk0ywAX9Z4noT&_nc_ht=scontent.fstv2-1.fna&oh=00_AfAnejP5kobkVKCwC8qot-ecMX1a0xH9JzsT9gSK2UZBmg&oe=6489C26B'    ),
+    blist(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/734479_508725492516918_754202086_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9267fe&_nc_ohc=77NKtQ2e2uMAX-d281v&_nc_oc=AQm7RRs-NzSsvt3SPkil4z9JqTRqRZUhLuUbdn5DjqyyeSClmrYGxsD8vfd0OVqIkfk&_nc_ht=scontent.fstv2-1.fna&oh=00_AfBwZGqx0kgilDlQLwDZT_zEM-juPhwTQt-Pp-mkRZXZ1w&oe=6489C3D6'    ),
+    blist(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/734184_505931672796300_364252955_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=eEWli5nOMZEAX_-zOnw&_nc_ht=scontent.fstv2-1.fna&oh=00_AfBM6mzCJQWciTGP-eTT9avKEaR66V5rnZ3wxW-24PjjFQ&oe=6489EFE8'
+    ),
+    blist(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/72468_505931049463029_1843148629_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9267fe&_nc_ohc=F3lGHPZ88QoAX-nz75V&_nc_ht=scontent.fstv2-1.fna&oh=00_AfAYLpiCb7abf-uJB_yD_VWM1EbwYRhRR7ckH5EZHqSRzg&oe=6489C4C6'
+    ),
+    blist(
+        'https://cdn1.epicgames.com/spt-assets/3a9870d9020c426bb3c64721566aca31/the-dead-await-1o87j.jpg?h=270&quality=medium&resize=1&w=480'
+    ),
+    blist(
+        'https://cdn1.epicgames.com/offer/0ded1556336546bf849c9d28878ec86c/EGS_SpacePunks_FlyingWildHog_S1_2560x1440-f1836394c24ad706d84b41236b96dc7c?h=270&quality=medium&resize=1&w=480'
+    ),
+
+  ];
+  List  <blist2> l2=<blist2>[
+
+    blist2(
+        'https://cdn1.epicgames.com/spt-assets/3a9870d9020c426bb3c64721566aca31/the-dead-await-1o87j.jpg?h=270&quality=medium&resize=1&w=480'
+    ),
+    blist2(
+        'https://cdn1.epicgames.com/offer/0ded1556336546bf849c9d28878ec86c/EGS_SpacePunks_FlyingWildHog_S1_2560x1440-f1836394c24ad706d84b41236b96dc7c?h=270&quality=medium&resize=1&w=480'
+    ),
+    blist2(
+'https://images.hindustantimes.com/img/2022/09/09/550x309/Subway_Surfers_1662720383211_1662720383417_1662720383417.png'
+    ),
+    blist2(
+'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyzbOkP5uFaVobpvpc-gtTfSUGAtv8eHGOkiKntoL_A5TX5ewxHMpJqGJwHOnxOebRzDw&usqp=CAU'
+    ),
+    blist2(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/150432_501573386565462_958415964_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9267fe&_nc_ohc=NVMiC008dUAAX9-Y_8N&_nc_ht=scontent.fstv2-1.fna&oh=00_AfC1wK8g-VC8UybEV1Wj7EFa84u62GTCBRwVXNFEN23FWA&oe=6489C00B'
+    ),
+    blist2(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/24270_496243227098478_1250232508_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9267fe&_nc_ohc=swnLHMJQzngAX9lRLx2&_nc_ht=scontent.fstv2-1.fna&oh=00_AfC2TjyCavJyQoBGxN8YfP_s-mDIV1s7h43iSKz9es8IoA&oe=6489EDE7'
+    ),
+    blist2(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/560260_495727347150066_594732564_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=vP9WmTE_Mz4AX-XV3So&_nc_ht=scontent.fstv2-1.fna&oh=00_AfAzZmPUOBk6Z7xjuEApcPSNUUa_7vWx_q0KhykBBRqCWQ&oe=6489DEBA'
+    ),
+    blist2(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/536963_494421313947336_196915409_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9267fe&_nc_ohc=mWYKmjT4hYUAX_irzsK&_nc_ht=scontent.fstv2-1.fna&oh=00_AfA67s3zAYb8Cqykj-9-r_Y-mCagCRZ4nrd1LVLWs4v70w&oe=6489E17D'
+    ),
+  ];
+  List  <blist3> l3=<blist3>[
+    blist3(
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_SWhlyRbk4rnyZLdMOZktNtsV1_f-rRNgXp34WQwz0xf9UNfzyydFF7_sm44McIySkQY&usqp=CAU',
+      'City Racing',
+      'The game might compare itself to Grand\n'
+          'Theft Auto, but a better comparison\n'
+          'would be Midtown Madness....',
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/1011127_544464655609668_1195753147_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9267fe&_nc_ohc=DoJfwbfkBisAX-YC2JR&_nc_ht=scontent.fstv2-1.fna&oh=00_AfD3LQc0ThBJJ2PNGuh3EejBPbwgV7WoKxov3fZo7RJkgA&oe=6489C5A8',
+      'Modern Combat 3:',
+      'Fallen Nation ARMv6 APK +\n'
+          'GAMEDATA torrent (700mb) FREE',
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/994161_544464832276317_1289792829_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9267fe&_nc_ohc=ioNccWHMeVQAX96_MAy&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCUuhcn9Y_gmttSXoLZWBuJWUM3Mn-Y6538tNs0NmeXjw&oe=6489D63B',
+      'Batman',
+      'Arkham City Lockdown APK +\n GAMEDATA torrent (1.01GB) FREE \n'
+
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/996732_542517402471060_1781074167_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=1FaLe0xxx9UAX95pdUt&_nc_ht=scontent.fstv2-1.fna&oh=00_AfDjf8F97yeEGzCPm8HTLgmoRWtr-tsuhXsLZUAfpAcN3Q&oe=6489C470',
+      'Stargate SG-1: ',
+      'Unleashed Episode 1 APK FREE\n'
+
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/984109_540918182630982_1184178037_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=XoEnuQzUOdcAX-tq0bF&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCfI03eZVONyd4LOiYC0M7omrthC3mQZ2Gh7i14ezhopQ&oe=6489E5DD',
+      'After Earth ',
+      'HD APK + GAMEDATA FREE',
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/6869_540917942631006_317447391_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=rPksEruBEQcAX9Cs16g&_nc_ht=scontent.fstv2-1.fna&oh=00_AfB4Id2pjIcJFhilv4aLwKAUWlvN4HRzmsghP_Z5h4BdXg&oe=6489C4B0',
+      'Ravensword Shadowlands',
+      'HD APK + GAMEDATA FREE\n'
+
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/941927_537835706272563_1507386770_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=65oyGEl7b24AX9HZ5a1&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCjRZCh1WdYTpokIZe5r54nJTR0u1myLNfQGewViEVHKA&oe=6489EBA4',
+      'Max Payne',
+      'HD APK + GAMEDATA (No Root) FREE',
+    ),
+    blist3(
+'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/599265_533616490027818_54885937_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9267fe&_nc_ohc=eh9SIsuL6hMAX_8AwsZ&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCUPoUJSwarSVMUypSr6OMKLKAhmmixC_zdYEAr6idFng&oe=6489BF63',
+      'Fire & Forget ',
+      'Final Assault APK + GAMEDATA free \nAWESOME GAME',
+    ),
+
+    blist3(
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_SWhlyRbk4rnyZLdMOZktNtsV1_f-rRNgXp34WQwz0xf9UNfzyydFF7_sm44McIySkQY&usqp=CAU',
+      'City Racing',
+      'The game might compare itself to Grand\n'
+          ' Theft Auto, but a better comparison \n'
+          'would be Midtown Madness....',
+    ),
+    blist3(
+      'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/1011127_544464655609668_1195753147_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9267fe&_nc_ohc=DoJfwbfkBisAX-YC2JR&_nc_ht=scontent.fstv2-1.fna&oh=00_AfD3LQc0ThBJJ2PNGuh3EejBPbwgV7WoKxov3fZo7RJkgA&oe=6489C5A8',
+      'Modern Combat 3:',
+      'Fallen Nation ARMv6 APK + \n'
+          'GAMEDATA torrent (700mb) FREE',
+    ),
+    blist3(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/994161_544464832276317_1289792829_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9267fe&_nc_ohc=ioNccWHMeVQAX96_MAy&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCUuhcn9Y_gmttSXoLZWBuJWUM3Mn-Y6538tNs0NmeXjw&oe=6489D63B',
+        'Batman',
+        'Arkham City Lockdown APK +\n GAMEDATA torrent (1.01GB) FREE \n'
+
+    ),
+    blist3(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/996732_542517402471060_1781074167_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=1FaLe0xxx9UAX95pdUt&_nc_ht=scontent.fstv2-1.fna&oh=00_AfDjf8F97yeEGzCPm8HTLgmoRWtr-tsuhXsLZUAfpAcN3Q&oe=6489C470',
+        'Stargate SG-1: ',
+        'Unleashed Episode 1 APK FREE\n'
+
+    ),
+    blist3(
+      'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/984109_540918182630982_1184178037_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9267fe&_nc_ohc=XoEnuQzUOdcAX-tq0bF&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCfI03eZVONyd4LOiYC0M7omrthC3mQZ2Gh7i14ezhopQ&oe=6489E5DD',
+      'After Earth ',
+      'HD APK + GAMEDATA FREE',
+    ),
+    blist3(
+        'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/6869_540917942631006_317447391_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=rPksEruBEQcAX9Cs16g&_nc_ht=scontent.fstv2-1.fna&oh=00_AfB4Id2pjIcJFhilv4aLwKAUWlvN4HRzmsghP_Z5h4BdXg&oe=6489C4B0',
+        'Ravensword Shadowlands',
+        'HD APK + GAMEDATA FREE\n'
+
+    ),
+    blist3(
+      'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/941927_537835706272563_1507386770_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=65oyGEl7b24AX9HZ5a1&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCjRZCh1WdYTpokIZe5r54nJTR0u1myLNfQGewViEVHKA&oe=6489EBA4',
+      'Max Payne',
+      'HD APK + GAMEDATA (No Root) FREE',
+    ),
+    blist3(
+      'https://scontent.fstv2-1.fna.fbcdn.net/v/t1.18169-9/599265_533616490027818_54885937_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9267fe&_nc_ohc=eh9SIsuL6hMAX_8AwsZ&_nc_ht=scontent.fstv2-1.fna&oh=00_AfCUPoUJSwarSVMUypSr6OMKLKAhmmixC_zdYEAr6idFng&oe=6489BF63',
+      'Fire & Forget ',
+      'Final Assault APK + GAMEDATA free \nAWESOME GAME',
+    ),
+
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+        length: 7,
+        child:  SafeArea(
+        child: Scaffold(
+            body:Container(
+              height: double.infinity,
+              width: double.infinity,
+              color: Colors.black,
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 50,
+                      width: double.infinity,
+                      color: Colors.black,
+                      alignment: Alignment.topLeft,
+                      child:    Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 40,
+                          width: 300,
+                          decoration: BoxDecoration(
+                            color: Colors.white12,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          alignment: Alignment.centerLeft,
+                          child: Row(
+                            children: [
+                              SizedBox(width: 20,),
+                              Icon(Icons.search,color: Colors.white,size: 20,),
+                              SizedBox(width: 20,),
+                              Text("Search App .... ",style: TextStyle(color: Colors.white,fontSize: 15),),
+                              SizedBox(width: 100,),
+                              Icon(Icons.add_alert_sharp,size: 20,color: Colors.white,)
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 50,
+                      width: double.infinity,
+                      color: Colors.black,
+                      child: TabBar(
+                        labelColor: Colors.blue,
+                        unselectedLabelColor: Colors.white,
+                        isScrollable: true,
+                        tabs: [
+                          Tab(text: 'For You'),
+                          Tab(text: 'Top Chats'),
+                          Tab(text: 'Kids'),
+                          Tab(text: 'Events'),
+                          Tab(text: 'Premium'),
+                           Tab(text: 'Categories'),
+                          Tab(text: 'More'),
+                        ],
+                      ),
+
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Epic Upgrade awaits",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
+                    ),
+                    Container(
+                      height: 200,
+                      width: double.infinity,
+                      color: Colors.black,
+                      child:    ListView.builder(
+                        itemCount: l2.length,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (BuildContext context,int  index) {
+                          return  InkWell(
+                            onTap:() {
+
+                              Navigator.pushNamed(
+                                  context,
+                                  '/C_page',
+                              arguments: l2[index]);
+                            },
+                            child:  Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 190,
+                                width: 300,
+                                alignment: Alignment.bottomCenter,
+                                decoration: BoxDecoration(
+                                    color: Colors.cyan,
+                                    image: DecorationImage(
+                                      image: NetworkImage("${l2[index].img}"),
+                                      fit: BoxFit.cover,
+                                    )
+                                ),
+                              ),
+                            ),
+                          );
+                        },),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text("Suggested for you ",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
+                    ),
+                    Container(
+                        height: 300,
+                        width: double.infinity,
+                        color: Colors.black,
+                        child:GridView.builder(
+                          itemCount: l3.length,
+                          scrollDirection: Axis.horizontal,
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount:3,
+                            crossAxisSpacing: 5,
+                            mainAxisSpacing: 5,
+                            childAspectRatio:2/9,
+                          ),
+                          itemBuilder: (BuildContext context,int  index) {
+                            return InkWell(
+                                onTap: () {
+                              Navigator.pushNamed(context,'/C2_page',arguments: l3[index]);
+                            },
+                            child: Container(
+                              height: 100,
+                              width: 500,
+                              color: Colors.black,
+                              alignment: Alignment.center,
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      height: 90,
+                                      width: 90,
+                                      decoration: BoxDecoration
+                                        (
+                                          color: Colors.black,
+                                          borderRadius: BorderRadius.circular(10),
+                                          image: DecorationImage(
+                                            image: NetworkImage("${l3[index].img}"),
+                                            fit: BoxFit.fill,
+                                          )
+                                      ),
+                                    ),
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("${l3[index].text1}",style: TextStyle(fontSize: 20,color: Colors.white),),
+                                      Text("${l3[index].text2}",style: TextStyle(fontSize: 15,color: Colors.white70),)
+                                    ],
+
+                                  )
+                                ],
+                              ),
+                            ));
+
+                          },),
+                      ),
+                   Row(
+                     children: [
+                       Padding(
+                         padding: const EdgeInsets.all(10.0),
+                         child: Text("Cartoon Games ",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
+                       ),
+                       SizedBox(width: 280,),
+                       Icon(Icons.arrow_forward,size: 20,color: Colors.white,)
+                     ],
+                   ),
+                    Container(
+                      height: 200,
+                      width: double.infinity,
+                      color: Colors.black,
+                      child:    ListView.builder(
+                        itemCount: l1.length,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (BuildContext context,int  index) {
+                          return InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context,'C_page',arguments: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 190,
+                                  width: 300,
+                                  alignment: Alignment.bottomCenter,
+                                  decoration: BoxDecoration(
+                                      color: Colors.cyan,
+                                      image: DecorationImage(
+                                        image: NetworkImage("${l1[index].img}"),
+                                        fit: BoxFit.cover,
+                                      )
+                                  ),
+                                ),
+                              ));
+                            },
+                          );
+
+                        },),
+                    ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text("Suggested for you ",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold)),
+                    ),
+                    Container(
+                      height: 300,
+                      width: double.infinity,
+                      color: Colors.black,
+                      child:GridView.builder(
+                        itemCount: l3.length,
+                        scrollDirection: Axis.horizontal,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount:3,
+                          crossAxisSpacing: 5,
+                          mainAxisSpacing: 5,
+                          childAspectRatio:2/9,
+                        ),
+                        itemBuilder: (BuildContext context,int  index) {
+                          return InkWell(
+                              onTap: () {
+                                Navigator.pushNamed(context,'/C2_page',arguments: l3[index]);
+                              },
+                              child: Container(
+                                height: 100,
+                                width: 500,
+                                color: Colors.black,
+                                alignment: Alignment.center,
+                                child: Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        height: 90,
+                                        width: 90,
+                                        decoration: BoxDecoration
+                                          (
+                                            color: Colors.black,
+                                            borderRadius: BorderRadius.circular(10),
+                                            image: DecorationImage(
+                                              image: NetworkImage("${l3[index].img}"),
+                                              fit: BoxFit.fill,
+                                            )
+                                        ),
+                                      ),
+                                    ),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("${l3[index].text1}",style: TextStyle(fontSize: 20,color: Colors.white),),
+                                        Text("${l3[index].text2}",style: TextStyle(fontSize: 15,color: Colors.white70),)
+                                      ],
+
+                                    )
+                                  ],
+                                ),
+                              ));
+
+                        },),
+                    ),
+                //img&text
+                    Container(
+                      height: 250,
+                      width: double.infinity,
+                      color: Colors.black,
+                      child:    ListView.builder(
+                        itemCount: l1.length,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (BuildContext context,int  index) {
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: 230,
+                              width: 150,
+                              alignment: Alignment.bottomCenter,
+                              decoration: BoxDecoration(
+                                  color: Colors.cyan,
+                                  image: DecorationImage(
+                                    image: NetworkImage("${l1[index].img}"),
+                                    fit: BoxFit.cover,
+                                  )
+                              ),
+                            ),
+                          );
+
+                        },),
+                    ),
+
+                      Container(
+                      height: 700,
+                      width: double.infinity,
+                      color: Colors.black,
+                      child:GridView.builder(
+                        itemCount: l3.length,
+                        scrollDirection: Axis.horizontal,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount:5,
+                          crossAxisSpacing: 5,
+                          mainAxisSpacing: 5,
+                          childAspectRatio:2/6,
+                        ),
+                        itemBuilder: (BuildContext context,int  index) {
+                          return InkWell(
+                            onTap: () {
+                            Navigator.pushNamed(context,'/C2_page',arguments:l3[index]);
+                            },
+                            child:  Container(
+                              height: 100,
+                              width: 300,
+                              color: Colors.black,
+                              alignment: Alignment.center,
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Container(
+                                      height: 90,
+                                      width: 90,
+                                      decoration: BoxDecoration
+                                        (
+                                          color: Colors.black,
+                                          borderRadius: BorderRadius.circular(10),
+                                          image: DecorationImage(
+                                            image: NetworkImage("${l3[index].img}"),
+                                            fit: BoxFit.cover,
+                                          )
+                                      ),
+                                    ),
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(height: 10),
+                                      Text("${l3[index].text1}",style: TextStyle(fontSize: 20,color: Colors.white),),
+                                      SizedBox(height: 7),
+                                      Text("${l3[index].text2}",style: TextStyle(fontSize: 15,color: Colors.white38),)
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+
+                  ],
+                ),
+              )
+            )
+        ))
+    );
+  }
+}
+class blist{
+  late String img;
+  blist(this.img,);
+}
+class blist2{
+  late String img;
+  blist2(this.img,);
+}
+class blist3 {
+  late String img;
+  late String text1;
+  late String text2;
+
+  blist3(this.img, this .text1, this.text2);
+}
